@@ -1,14 +1,11 @@
-<!-- views/index.hbs -->
 
-<div id="container">
-  <div id="beer-icon">
-  <img id="beer"  src="/images/beer.png" alt="Beer image">
+
+<section class="home">
+  <div ><img class="home-img" src="/images/beer.png" alt="" srcset=""></div>
+  <div class="home-buttons">
+    <a class="btn btn-primary btn-lg" href="/beers" role="button">Check the beers!</a>
+    {{!-- IH: The link bellow is not working because, if you check your app.js file, you defined the route as "/random-beer" and not "/randomBeer".  --}}
+    {{!-- Always make sure that your sending users to the correct routes --}}
+    <a class="btn btn-primary btn-lg" href="/randomBeer" role="button">Check a random beer!</a>
   </div>
-
-  <div class="main-button" >
-   <a  href="/beers"><button id="beerButton">Check the Beers!</button></a>
-   <a  href="/random-beers"><button id="beerButton">Check a random Beer!</button></a>
-  </div>
-
-
-</div>
+</section>
